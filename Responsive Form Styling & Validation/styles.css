@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.animate-heading {
+    animation: slideDown 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20%,
+    60% {
+        transform: translateX(-10px);
+    }
+
+    40%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.6);
+    border-color: #667eea;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5a67d8;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    /* top: 35px; */
+    cursor: pointer;
+    color: #667eea;
+}
+
+#togglePwd {
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+}
